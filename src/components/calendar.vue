@@ -111,6 +111,9 @@ export default {
         },
         resourceRender (...args) {
           self.$emit('resourceRender', ...args)
+        },
+        select (...args) {
+          self.$emit('select', ...args)
         }
       }
     }

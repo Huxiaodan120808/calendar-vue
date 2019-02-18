@@ -6,7 +6,7 @@
       :resources="resources"
       :events="events"
       @drop="handleDropIn"
-      @eventClick="handleClickEvent" @resourceRender="resourceRecender">
+      @eventClick="handleClickEvent" @resourceRender="resourceRecender" @select="selectRoom">
     </vue-fullcalendar>
     <!--<button type="primary" @click="updateOptions">updateOptions</button>-->
     <!--<button class="flex1 blueFontColor" @click="updateOptions">changeResources</button>-->
@@ -206,6 +206,11 @@ export default {
           console.log(element)
         }
       })
+    },
+    selectRoom (calEvent, jsEvent, view) {
+      console.log(calEvent)
+      console.log(jsEvent)
+      console.log(view)
     }
   }
 }
