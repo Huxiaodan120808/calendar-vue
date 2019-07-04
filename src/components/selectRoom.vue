@@ -41,6 +41,8 @@ export default {
         header: false,
         height: 400,
         setGridHeight: 28,
+        slotWidth: 50, // 单元格的width 单位px
+        resourceAreaWidth: 200, // 会议室名称宽度 单位px
         resourceColumns: [
           {
             labelText: 'Room',
