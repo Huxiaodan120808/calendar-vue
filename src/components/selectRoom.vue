@@ -198,15 +198,22 @@ export default {
         console.log(calEvent.title)
         console.log(jsEvent)
         // console.log(view[0])
-        $('.fc-expander-space').removeClass('scheduler_default_bg_blue')
-        let element = jsEvent[0].children[0].firstChild.firstChild
-        if (hasClassname(element, 'scheduler_default_bg_blue')) {
-          removeClass(element, 'scheduler_default_bg_blue')
-        } else {
-          console.log('2222')
-          addClass(element, 'scheduler_default_bg_blue')
-          console.log(element)
-        }
+        // 点击复选框
+       // if (e.target.className.indexOf('fc-expander-space') !== -1 || e.target.className.indexOf('fc-icon') !== -1) {
+          console.log(calEvent.title)
+          // console.log(view[0])
+          $('.fc-expander-space').removeClass('scheduler_default_bg_blue')
+          let element = jsEvent[0].children[0].firstChild.firstChild
+          if (hasClassname(element, 'scheduler_default_bg_blue')) {
+            removeClass(element, 'scheduler_default_bg_blue')
+          } else {
+            console.log('2222')
+            addClass(element, 'scheduler_default_bg_blue')
+            console.log(element)
+          }
+        //}
+        // 点击名称
+       // if(e.target.className.indexOf('fc-cell-text') !== -1) {}
       })
     },
     selectRoom (calEvent, jsEvent, view) {
